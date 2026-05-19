@@ -1,4 +1,5 @@
 <?php
+use Horde\Injector\Injector;
 
 /**
  * Factory Manager
@@ -8,7 +9,7 @@
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
  *
  * @author Diana Hille <hille@b1-systems.de>
- * @author Ralf Lang <lang@b1-systems.de>
+ * @author Ralf Lang <ralf.lang@ralf-lang.de>
  *
  * @category   Horde
  * @package horde-dns
@@ -20,7 +21,7 @@ class Horde_DNS_Factory_Mapper extends Horde_Rdo_Factory
 
     protected $_injector = null;
 
-    public function __construct(Horde_Injector $injector)
+    public function __construct(Horde_Injector|Injector $injector)
     {
         $this->_injector = $injector;
     }
