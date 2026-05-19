@@ -4,7 +4,7 @@
  *
  * Based on an initial version by Diana Hille
  *
- * @author Ralf Lang <lang@b1-systems.de>
+ * @author Ralf Lang <ralf.lang@ralf-lang.de>
  */
 namespace Horde\Dns;
 
